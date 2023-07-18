@@ -1,0 +1,12 @@
+.collection {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font: 20px/25px sans-serif;
+    
+}
+
+.collection > p {
+    /* font-size: 16px; */
+    margin: 10px;
+}
