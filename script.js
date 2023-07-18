@@ -5,6 +5,8 @@ var str = 'string';
 
 var buttons = document.querySelectorAll("button");
 
+const baseColor = document.querySelector("button").style.backgroundColor;
+
 //функции
 function plusOne() {
     textNumber.textContent = Number(textNumber.textContent) + 1;
@@ -14,7 +16,11 @@ function plusSomething(number) {
     textNumber.textContent = Number(textNumber.textContent) + Number(number);
 }
 
-function changeColor() {
+function setZero() {
+    textNumber.textContent = 0
+}
+
+function changeColorPink() {
     console.log('Сейчас все поменяю на розовый!');
     buttons.forEach(button => {
         console.log('Поменял на розовый кнопку!');
@@ -30,4 +36,10 @@ function changeColor() {
         console.log(`${i}`);
         i++;
     }
+}
+
+function changeColorWhite() {
+    buttons.forEach(button => {
+        button.style.backgroundColor = baseColor;
+    })
 }
